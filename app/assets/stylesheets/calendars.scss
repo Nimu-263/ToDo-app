@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-color: rgb(114, 151, 161);
+  // background-color: rgb(114, 151, 161);
+  background-image: image-url("image1.png");
 }
 
 .calendar {
@@ -73,7 +74,16 @@ body {
 
 .month span {
   font-size: 30px;
-  border: 7px groove steelblue;
+  border: 7px double gray;
   padding: 5px;
+  font-weight: bold;
   color: white;
+}
+
+.staday {
+  color: blue;
+}
+
+.sunday {
+  color: red;
 }
