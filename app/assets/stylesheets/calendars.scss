@@ -3,12 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   background-color: rgb(114, 151, 161);
-  height: 100vh;
 }
 
 .calendar {
   width: 100vw;
-  margin-top: 15vh;
+  margin-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +46,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15vh;
+  padding-top: 10vh;
 }
 
 .lavel {
@@ -65,4 +64,16 @@ body {
   height: 4vh;
   width: 13vw;
   margin: 0 2vw;
+}
+
+.month  {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.month span {
+  font-size: 30px;
+  border: 7px groove steelblue;
+  padding: 5px;
+  color: white;
 }
