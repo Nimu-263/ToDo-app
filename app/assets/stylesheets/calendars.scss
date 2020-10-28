@@ -79,6 +79,7 @@ body {
   padding: 5px;
   font-weight: bold;
   color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .staday {
@@ -87,4 +88,17 @@ body {
 
 .sunday {
   color: red;
+}
+
+.submit-btn {
+  padding-left: 5px;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .7);
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
 }

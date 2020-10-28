@@ -28,6 +28,17 @@ class CalendarsController < ApplicationController
 
     plans = Plan.where(date: @first_day..@last_day)
 
+    # 下記 "last_month" をlmと表記する
+    first_day_wday = @first_day.wday 
+    if first_day_wday != 0
+      first_day_wday.times do |x|
+        lm_plans = []
+        lm_wday_num = (@first_day - (first_day_wday - x)).wday
+        lm_days = { date: (@first_day - (first_day_wday - x)).day, plans: lm_plans, wday: wdays[lm_wday_num] }
+        @month_days.push(lm_days) 
+      end
+    end
+
     month_days = @last_day.day
     month_days.times do |x|
       today_plans = []
