@@ -11,8 +11,18 @@
     <span>
       <%= "#{@first_day.month}月の予定" %>
     </span>
+
   </div>
 
+</div>
+
+<div class = 'button'>
+  <button class = 'button_month'>月</button>
+  <button class = 'button_week'> 週</button>
+</div>
+
+<div class = 'week'>
+  <%= render "week" %>
 </div>
 
 <div class='calendar'>

@@ -1,0 +1,23 @@
+<div class='calendar'>
+  <% @week_days.each do |day| %>
+    <div class='item'>
+      <div class='date'>
+        <%= day[:date] %>日
+        <%if day[:wday] == "(土)" %>
+          <span class='staday'><%= day[:wday] %></span>
+        <%elsif day[:wday] == "(日)" %>
+          <span class='sunday'><%= day[:wday] %></span>
+        <%else %>
+          <span><%= day[:wday] %></span>
+        <% end %>
+      </div>
+      <ul class='content'>
+        <% if day[:plans].length != 0 %>
+          <% day[:plans].each do |plan| %>
+            <li class='plan-list'>・<%= plan %></li>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>
