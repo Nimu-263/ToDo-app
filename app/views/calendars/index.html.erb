@@ -17,15 +17,14 @@
 </div>
 
 <div class = 'button'>
-  <button class = 'button_month'>月</button>
-  <button class = 'button_week'> 週</button>
+  <button type = "button" class = 'button_month_week' id = 'button_month_week'>月⇔今週</button>
 </div>
 
-<div class = 'week'>
+<div class = 'week_plans' id = "week_plans" style = 'display: none;'>
   <%= render "week" %>
 </div>
 
-<div class='calendar'>
+<div class='calendar' id='calendar'>
   <% @month_days.each do |day| %>
     <div class='item'>
       <div class='date'>

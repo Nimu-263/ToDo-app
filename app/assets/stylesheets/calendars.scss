@@ -4,6 +4,7 @@
 body {
   // background-color: rgb(114, 151, 161);
   background-image: image-url("image1.png");
+  height: 100%;
 }
 
 .calendar {
@@ -103,18 +104,19 @@ body {
   top: 5px;
 }
 
-.week {
-  display: none;
-}
-
 .button {
-  margin-left: 80%;
+  margin-left: 70%;
 }
 
-.button_month {
+.button_month_week {
   padding: 0 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.week_plans {
+  height: 70vh;
 }
 
-.button_week {
-  padding: 0 20px;
+.plan-list {
+  font-size: 13px;
 }
